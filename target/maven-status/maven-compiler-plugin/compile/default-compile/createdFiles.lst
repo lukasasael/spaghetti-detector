@@ -1,0 +1,7 @@
+com/spaghettidetector/MetricsVisitor.class
+com/spaghettidetector/JavaFileParser.class
+com/spaghettidetector/MetricsReport$MethodMetrics.class
+com/spaghettidetector/MetricsReport.class
+com/spaghettidetector/TestSample.class
+com/spaghettidetector/MetricsVisitor$BodyAnalyzerVisitor.class
+com/spaghettidetector/Main.class
