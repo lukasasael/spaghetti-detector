@@ -6,6 +6,8 @@ import java.util.List;
 public class MetricsReport {
     private String analyzedFile;
     private int totalMethods;
+    // 1. ADICIONADO: Nota global do arquivo (média dos métodos)
+    private double fileScore; 
     private List<MethodMetrics> methods = new ArrayList<>();
 
     public MetricsReport(String analyzedFile) {
@@ -17,6 +19,11 @@ public class MetricsReport {
         this.totalMethods = this.methods.size();
     }
 
+    // Método utilitário para definir a nota global depois
+    public void setFileScore(double fileScore) {
+        this.fileScore = fileScore;
+    }
+
     public static class MethodMetrics {
         private String methodName;
         private int lines;
@@ -26,9 +33,12 @@ public class MetricsReport {
         private int jumps;
         private int conditionals;
         private int loops;
+        // 2. ADICIONADO: Campo para armazenar a nota calculada do método
+        private double score; 
 
+        // 3. ATUALIZADO: Construtor agora recebe o parâmetro 'double score' no final
         public MethodMetrics(String methodName, int lines, int parameters, int exits, 
-                             int depth, int jumps, int conditionals, int loops) {
+                             int depth, int jumps, int conditionals, int loops, double score) {
             this.methodName = methodName;
             this.lines = lines;
             this.parameters = parameters;
@@ -37,6 +47,7 @@ public class MetricsReport {
             this.jumps = jumps;
             this.conditionals = conditionals;
             this.loops = loops;
+            this.score = score; 
         }
     }
 }

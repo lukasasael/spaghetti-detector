@@ -1,0 +1,40 @@
+{
+  "analyzedFile": "TestSample.java",
+  "totalMethods": 3,
+  "fileScore": 0.0,
+  "methods": [
+    {
+      "methodName": "simpleMethod",
+      "lines": 3,
+      "parameters": 1,
+      "exits": 1,
+      "depth": 0,
+      "jumps": 0,
+      "conditionals": 0,
+      "loops": 0,
+      "score": 10.0
+    },
+    {
+      "methodName": "classifyScore",
+      "lines": 16,
+      "parameters": 1,
+      "exits": 4,
+      "depth": 5,
+      "jumps": 1,
+      "conditionals": 4,
+      "loops": 1,
+      "score": 10.0
+    },
+    {
+      "methodName": "processItems",
+      "lines": 12,
+      "parameters": 1,
+      "exits": 1,
+      "depth": 3,
+      "jumps": 2,
+      "conditionals": 2,
+      "loops": 2,
+      "score": 10.0
+    }
+  ]
+}

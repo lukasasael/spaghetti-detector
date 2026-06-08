@@ -45,7 +45,8 @@ public class MetricsVisitor extends VoidVisitorAdapter<MetricsReport> {
                 bodyAnalyzer.maxDepth,
                 bodyAnalyzer.jumps,
                 bodyAnalyzer.conditionals,
-                bodyAnalyzer.loops
+                bodyAnalyzer.loops,
+                10.0
         );
         report.addMethod(metrics);
     }
